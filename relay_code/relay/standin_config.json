@@ -1,0 +1,19 @@
+{
+  "_comment": "PLACEHOLDER values. Run probe.py on the real service, then calibrate.py rewrites the latency fields. Copy the limits from your Table 1.",
+  "rpm": 30,
+  "tpm": 8000,
+  "rpd": 1000,
+  "ttft_base_ms": 436.47066147308004,
+  "ttft_sigma": 0.33082381563555485,
+  "prefill_ms_per_tok": 0.1246421937872512,
+  "decode_tok_s": 958.3225429643974,
+  "decode_sigma": 0.20010635648119576,
+  "knee": 0,
+  "alpha": 0.005357471316364203,
+  "fail_prob": 0.0,
+  "slow_prob": 0.0,
+  "slow_mult": 1.0,
+  "hang_prob": 0.0,
+  "hang_s": 60,
+  "retry_after_daily_s": 3600
+}
