@@ -1,0 +1,20 @@
+[
+ {"id":"q01","paper":"att","answerable":true,"q":"How many identical layers are in the encoder stack of the base Transformer?","must":["\\b(6|six)\\b"],"verify":"check against paper"},
+ {"id":"q02","paper":"att","answerable":true,"q":"What is the model dimension d_model in the base Transformer?","must":["512"]},
+ {"id":"q03","paper":"att","answerable":true,"q":"How many attention heads does the base model use, and what is the key dimension per head?","must":["\\b(8|eight)\\b","64"]},
+ {"id":"q04","paper":"att","answerable":true,"q":"What is the inner dimension of the position-wise feed-forward layer?","must":["2048"]},
+ {"id":"q05","paper":"att","answerable":true,"q":"What BLEU score did the big Transformer reach on WMT 2014 English-to-German?","must":["28\\.4"]},
+ {"id":"q06","paper":"att","answerable":true,"q":"Which optimizer was used for training and how many warmup steps?","must":["Adam","4000"]},
+ {"id":"q07","paper":"att","answerable":true,"q":"What label smoothing value was used in training?","must":["0\\.1"]},
+ {"id":"q08","paper":"att","answerable":true,"q":"Why are the dot products scaled by one over the square root of d_k?","must":["softmax","gradient|magnitude|large"]},
+ {"id":"q09","paper":"moshi","answerable":true,"q":"What frame rate does the Mimi codec operate at?","must":["12\\.5"],"verify":"check against paper"},
+ {"id":"q10","paper":"moshi","answerable":true,"q":"What is the name of the text language model Moshi is built on, and roughly how many parameters does it have?","must":["Helium","7"],"verify":"check against paper"},
+ {"id":"q11","paper":"moshi","answerable":true,"q":"What theoretical latency does Moshi report, and what is it in practice?","must":["160","200"],"verify":"check against paper"},
+ {"id":"q12","paper":"moshi","answerable":true,"q":"What is the Inner Monologue method?","must":["text"],"verify":"check against paper"},
+ {"id":"q13","paper":"dc","answerable":true,"q":"What component of the dynamic chunking method decides where chunk boundaries are placed?","must":["rout"],"verify":"check against paper"},
+ {"id":"q14","paper":"dc","answerable":true,"q":"What input granularity does the dynamic chunking model operate on at its lowest level?","must":["byte"],"verify":"check against paper"},
+ {"id":"q15","paper":"att","answerable":false,"q":"What BLEU score does the Transformer achieve on WMT 2020 English-to-Czech?","must":[]},
+ {"id":"q16","paper":"moshi","answerable":false,"q":"How much did it cost in US dollars to train Moshi?","must":[]},
+ {"id":"q17","paper":"dc","answerable":false,"q":"What top-1 accuracy does dynamic chunking achieve on ImageNet?","must":[]},
+ {"id":"q18","paper":"att","answerable":false,"q":"How many parameters does GPT-4 have according to these papers?","must":[]}
+]
